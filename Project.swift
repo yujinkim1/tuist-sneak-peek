@@ -15,7 +15,9 @@ let project = Project(
             ),
             sources: ["TuistTMAExample/Sources/**"],
             resources: ["TuistTMAExample/Resources/**"],
-            dependencies: []
+            dependencies: [
+                .external(name: "Alamofire", condition: .none)
+            ]
         ),
         .target(
             name: "TuistTMAExampleTests",
